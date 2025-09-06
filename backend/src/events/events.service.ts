@@ -14,4 +14,8 @@ export class EventsService {
       },
     });
   }
+
+  findAll() {
+    return this.prisma.event.findMany();
+  }
 }

@@ -12,10 +12,10 @@ export class EventsController {
     return this.eventsService.create(createEventDto);
   }
 
-  // @Get()
-  // findAll() {
-  //   return this.eventsService.findAll();
-  // }
+  @Get()
+  findAll() {
+    return this.eventsService.findAll();
+  }
 
   // @Get(':id')
   // findOne(@Param('id') id: string) {
